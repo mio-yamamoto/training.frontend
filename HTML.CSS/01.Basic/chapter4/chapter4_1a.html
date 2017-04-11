@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>chapter4_1a.html</title>
+    <style>
+        body {
+            font-size: 1em;
+        }
+        
+        div {
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+
+<body>
+    bodyのフォントサイズ（1em = 16px）
+    <div>
+        body→divのフォントサイズ（16pxを継承したフォントサイズの0.8em = 約13px）
+        <div>
+            body→div→divのフォントサイズ（13pxを継承したフォントサイズの0.8em = 約10px）
+        </div>
+    </div>
+</body>
+
+</html>
