@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>chapter8_1f.html</title>
+<style>
+    body {
+        margin: 0;
+    }
+    
+    form {
+        padding: 16px;
+    }
+    
+    input {
+        box-sizing: border-box;
+    }
+    
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"] {
+        margin: 0.5em 0;
+        border: 1px solid #CCCCCC;
+        padding: 0.75em;
+        width: 100%;
+        font-size: 16px;
+        color: #999999;
+        border-radius: 6px;
+    }
+    
+    input[type="number"] {
+        margin-right: 0.5em;
+        width: auto;
+    }
+</style>
+</head>
+<body>
+<form action="#">
+    <p><label>パスワード<br>
+    <input type="password" name="pw" id="pw-field"></label></p>
+    <p><label>メールアドレス<br>
+    <input type="email" name="email" id="email-field"></label></p>
+    <p><label>お電話番号<br>
+    <input type="tel" name="tel" id="tel-field"></label></p>
+    <p><label>目標回数<br>
+    <input type="number" name="number" id="number-field">回</label></p>
+</form>
+</body>
+</html>
