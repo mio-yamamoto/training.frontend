@@ -1,0 +1,83 @@
+@charset "UTF-8";
+body {
+	margin: 0;
+}
+
+.container {
+	margin: 0 auto 0 auto;
+	max-width: 1000px;
+}
+
+section .container {
+	display: flex;
+	flex-flow: column;
+}
+
+
+/*
+各パートにパディング、背景、テキスト色などを指定する
+<div class="container">の子要素に指定する
+*/
+
+.header-inner {
+	padding: 10px 10px 0 10px;
+	background: #BAD7F5;
+}
+
+.nav-inner {
+	padding: 10px 10px 0 10px;
+	color: #FFFFFF;
+	background: #0086F9;
+}
+
+main {
+	padding: 20px 10px 20px 10px;
+	background: #FFFDE3;
+	/*
+    レイアウトのイメージをしやすいように高さを設定。
+    通常のWebデザインではレイアウトで高さを指定しない
+    */
+	height: 400px;
+}
+
+.sidebar {
+	padding: 20px 10px 20px 10px;
+	background: #C0F5B9;
+}
+
+.footer-inner {
+	padding: 20px 16px 10px 16px;
+	background: #BAD7F5;
+}
+
+@media only screen and (min-width: 768px) {
+	section .container {
+		flex-flow: row;
+	}
+	main {
+		flex: 1 1 auto;
+		order: 2;
+	}
+	.sidebar1 {
+		flex: 0 0 200px;
+		order: 1;
+	}
+	.sidebar2 {
+		flex: 0 0 250px;
+		order: 3;
+	}
+}
+
+/* わかりやすくするために適用しているCSS */
+body {
+	color: #444;
+}
+main p:last-child {
+	margin-bottom: 0;
+}
+.main-title {
+	margin: 0;
+}
+.copyright {
+	margin: 0;
+}

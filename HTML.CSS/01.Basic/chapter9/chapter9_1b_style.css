@@ -1,0 +1,45 @@
+@charset "UTF-8";
+body {
+	margin: 0;
+}
+
+.header-inner {
+	background: #BAD7F5;
+}
+
+.nav-inner {
+	color: #FFFFFF;
+	background: #0086F9;
+}
+
+.content-inner {
+	background: #FFFDE3;
+	/*
+    レイアウトのイメージをしやすいように高さを設定。
+    通常のWebデザインではレイアウトで高さを指定しない
+    */
+	height: 400px;
+}
+
+.footer-inner {
+	background: #BAD7F5;
+}
+
+
+/* わかりやすくするために適用しているCSS */
+
+body {
+	color: #444444;
+}
+
+main p:last-child {
+	margin-bottom: 0;
+}
+
+.main-title {
+	margin: 0;
+}
+
+.copyright {
+	margin: 0;
+}
