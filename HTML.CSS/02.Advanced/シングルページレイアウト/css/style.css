@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+}
+
+h2 {
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/*---------------------------------------------------------------------
+ BODY
+ ---------------------------------------------------------------------*/
+
+body {
+    margin: 0;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    
+}
+
+/* @media screen and (min-width: 1024px){
+    body {
+        background: url(../images/bg.png) fixed left bottom #000000;
+        background-size: cover;
+} */
+
+
+/*---------------------------------------------------------------------
+ HEADER
+ ---------------------------------------------------------------------*/
+
+.header-container {
+    padding: 60px 30px 80px 30px;
+    background-color: #151515;
+}
+
+.header-top:before,
+.header-top:after {
+    content: '';
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 2px;
+    background-color: #FFFFFF;
+}
+.header-top {
+    margin: 0 auto 30px auto;
+    font-size: 1.7rem;
+    color: #FFFFFF;
+}
+
+header h1 {
+    margin-top: 35px;
+    margin-bottom: 40px;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.header-bottom {
+    margin-bottom: 50px;
+    font-size: 1.6rem;
+    color: #888888;
+}
+
+.header-button a {
+    margin: 10px;
+    display: inline-block;
+    width: 160px;
+    padding: 20px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.button-about {
+    background-color: #AFA58D;
+}
+
+.button-contact {
+    background-color: #D29E04;
+}
+
+
+
+/* @media screen and (min-width: 768px){
+    
+} */
+
+
+/*---------------------------------------------------------------------
+ SECTION(ABOUT)
+ ---------------------------------------------------------------------*/
+
+.about-container {
+    padding: 80px 30px;
+    background-color: #FFFFFF;
+}
+
+.about-container p {
+    margin: 30px 0;
+}
+
+/*---------------------------------------------------------------------
+ SECTION(WORKS)
+ ---------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px){
+    
+}
+
+
+/*---------------------------------------------------------------------
+ SECTION(SKILLS)
+ ---------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px){
+    
+}
+
+
+/*---------------------------------------------------------------------
+ SECTION(CONTACT)
+ ---------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------
+ FOOTER
+ ---------------------------------------------------------------------*/
