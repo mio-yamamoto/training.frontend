@@ -4,136 +4,351 @@ html {
     font-size: 62.5%;
 }
 
+/*---------------------------------------------------------------------
+ COMMON
+ ---------------------------------------------------------------------*/
 h2 {
-    box-sizing: border-box;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    font-size: 2.5rem;
+    display: inline-block;
+    position: relative;
+    margin: 30px 0 15px;
+    padding-bottom: 15px;
+    font-size: 4rem;
     letter-spacing: 2px;
 }
+h2::before,
+h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #999999;
+}
+h2::before {
+    bottom: 5px;
+}
+
 
 /*---------------------------------------------------------------------
  BODY
  ---------------------------------------------------------------------*/
-
 body {
     margin: 0;
+    background: url(../images/bg.png) fixed left bottom;
+    background-size: cover;
     text-align: center;
     font-size: 1.3rem;
     font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     
 }
 
-/* @media screen and (min-width: 1024px){
-    body {
-        background: url(../images/bg.png) fixed left bottom #000000;
-        background-size: cover;
-} */
-
-
 /*---------------------------------------------------------------------
  HEADER
  ---------------------------------------------------------------------*/
-
 .header-container {
-    padding: 60px 30px 80px 30px;
-    background-color: #151515;
+    padding: 170px 30px 80px;
 }
 
-.header-top:before,
-.header-top:after {
-    content: '';
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 80%;
-    height: 2px;
-    background-color: #FFFFFF;
-}
 .header-top {
-    margin: 0 auto 30px auto;
-    font-size: 1.7rem;
+    margin: 0 0 30px;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
     color: #FFFFFF;
 }
+.header-top::before,
+.header-top::after {
+    content: '';
+    display: inline-block;
+    margin: 0 30px;
+    width: 140px;
+    height: 2px;
+    vertical-align: middle;
+    background-color: #FFFFFF;
+}
 
-header h1 {
-    margin-top: 35px;
-    margin-bottom: 40px;
-    font-size: 5rem;
-    font-weight: bold;
+h1 {
+    margin: 50px 0 40px;
+    font-size: 7.6rem;
     color: #FFFFFF;
 }
 
 .header-bottom {
-    margin-bottom: 50px;
+    margin: 16px 0 50px;
     font-size: 1.6rem;
     color: #888888;
 }
 
-.header-button a {
-    margin: 10px;
+.button-about,
+.button-contact {
     display: inline-block;
-    width: 160px;
+    box-sizing: border-box;
+    margin: 10px;
     padding: 20px;
+    width: 200px;
     border-radius: 4px;
-    color: #FFFFFF;
-    text-decoration: none;
     font-size: 1.2rem;
+    text-decoration: none;
     letter-spacing: 1px;
+    color: #FFFFFF;
 }
-
 .button-about {
     background-color: #AFA58D;
 }
-
 .button-contact {
     background-color: #D29E04;
 }
 
 
+@media only screen and (max-width: 768px) {
 
-/* @media screen and (min-width: 768px){
-    
-} */
+    .header-top::before,
+    .header-top::after {
+        content: '';
+        display: block;
+        margin: 10px auto 10px;
+        width: 80%;
+        height: 2px;
+        background-color: #FFFFFF;
+    }
+    .header-top {
+        margin: 0 auto 30px auto;
+        font-size: 1.7rem;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+    }
 
+    header h1 {
+        margin-top: 35px;
+        margin-bottom: 40px;
+        font-size: 5rem;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+
+    .header-bottom {
+        margin-bottom: 50px;
+        font-size: 1.6rem;
+        color: #888888;
+    }
+    .header-button a {
+        margin: 10px;
+        display: inline-block;
+        width: 160px;
+        padding: 20px;
+        border-radius: 4px;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    .button-about {
+        background-color: #AFA58D;
+    }
+    .button-contact {
+        background-color: #D29E04;
+    }
+
+}
 
 /*---------------------------------------------------------------------
  SECTION(ABOUT)
  ---------------------------------------------------------------------*/
-
 .about-container {
     padding: 80px 30px;
     background-color: #FFFFFF;
+    color: #333333;
 }
 
 .about-container p {
     margin: 30px 0;
+    font-size: 1.4rem;
+    line-height: 2.5;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-container {
+    padding: 80px 30px;
+    background-color: #FFFFFF;
+    }
+
+    .about-container p {
+    margin: 30px 0;
+    line-height: 1.8;
+    }
 }
 
 /*---------------------------------------------------------------------
  SECTION(WORKS)
  ---------------------------------------------------------------------*/
-
-@media screen and (min-width: 768px){
-    
+.works-container {
+    background-color: #383634;
+    color: #FFFFFF;
 }
 
+
+@media only screen and (max-width: 768px) {
+    .works-container {
+    padding: 80px 0;
+    background-color: #383634;
+    color: #FFFFFF;
+    }
+
+    .works1,
+    .works2,
+    .works3,
+    .works4 {
+    padding: 20px;
+    font-size: 1.2rem;
+    line-height: 24px;
+    position: relative;
+    }
+    .works1 {
+    margin-top: 60px;
+    background: url(../images/tree.jpg);
+    background-size: cover;
+    transform: rotateX(180deg);
+    opacity: 0.2;
+    }
+    .works2 {
+    background: url(../images/building.jpg);
+    background-size: cover;
+    transform: rotateX(180deg);
+    opacity: 0.2;
+    }
+    .works3 {
+    background: url(../images/lake.jpg);
+    background-size: cover;
+    transform: rotateX(180deg);
+    opacity: 0.2;
+    }
+    .works4 {
+    background: url(../images/sky.jpg);
+    background-size: cover;
+    transform: rotateX(180deg);
+    opacity: 0.2;
+    }
+    .works-container a {
+    display: inline-block;
+    width: 60%;
+    margin-top: 20px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    padding: 3px;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #FFFFFF;
+    }
+}
 
 /*---------------------------------------------------------------------
  SECTION(SKILLS)
  ---------------------------------------------------------------------*/
+.skills-container {
+    padding: 80px 0;
+    background-color: #FFFFFF;
+    color: #333333;
+}
 
-@media screen and (min-width: 768px){
+.skills-wrapper {
+    display: table;
+    table-layout: fixed;
+    width: 80%;
+    margin: 50px auto 0;
     
 }
 
+.skill1,
+.skill2,
+.skill3 {
+    display: table-cell;
+}
 
+.skills-icon {
+    display: inline-block;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    border: 4px solid;
+    border-radius: 50%;
+    font-size: 8rem;
+    line-height: 142px;
+    color: #F1B400;
+}
+
+h3 {
+    margin: 0 20px 20px;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.skills-wrapper p {
+    margin: 0 20px;
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+
+@media only screen and (max-width: 768px) {
+.skills-container {
+    padding: 80px 0;
+}
+.skills-wrapper {
+    margin-top: 50px;
+}
+.skills1,
+.skills2,
+.skills3 {
+    margin: 40px auto 40px;
+    line-height: 2;
+}
+.skills-icon {
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 4px solid #F1B400;
+    border-radius: 50%;
+    font-size: 5rem;
+    line-height: 92px;
+    color: #F1B400;
+}
+
+h3 {
+    margin: 0 20px 20px;
+    font-size: 2rem;
+    font-weight: normal;
+}
+}
 /*---------------------------------------------------------------------
  SECTION(CONTACT)
  ---------------------------------------------------------------------*/
+.contact-container {
+    padding: 80px 0 150px;
+    color: #FFFFFF;
+}
 
+form {
+    margin: 50px 300px 0;
+}
+
+input[type="text"],
+textarea {
+    margin-bottom: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.05);
+    font: inherit;
+    color: #FFFFFF;
+}
+textarea {
+    height: 150px;
+}
 /*---------------------------------------------------------------------
  FOOTER
  ---------------------------------------------------------------------*/
