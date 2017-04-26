@@ -14,8 +14,8 @@
     <h1>HI, MY NAME IS...</h1>
     <p class="header-bottom">Check out some of my works.</p>
     <div class="header-button">
-        <a class="button-about" href="#about-container">LEARN MORE</a>
-        <a class="button-contact" href="#contact-container">SEND MESSAGE</a>
+        <a class="button button-about" href="#about-container">LEARN MORE</a>
+        <a class="button button-contact" href="#contact-container">SEND MESSAGE</a>
     </div>
 </header>
 <section class="about-container">
@@ -29,29 +29,43 @@
 </section>
 <section class="works-container">
     <h2>WORKS</h2>
-    <div class="works1">
-        ひとつめの制作事例が入ります。<br>
-        簡単な説明が入ります。<br>
-        使用ツール：XXX, XXX, XXX<br>
-        <a href="#">READ MORE</a>
-    </div>
-    <div class="works2">
-        ふたつめの制作事例が入ります。<br>
-        簡単な説明が入ります。<br>
-        使用ツール：XXX, XXX, XXX<br>
-        <a href="#">READ MORE</a>
-    </div>
-    <div class="works3">
-        みっつめの制作事例が入ります。<br>
-        簡単な説明が入ります。<br>
-        使用ツール：XXX, XXX, XXX<br>
-        <a href="#">READ MORE</a>
-    </div>
-    <div class="works4">
-        よっつめの制作事例が入ります。<br>
-        簡単な説明が入ります。<br>
-        使用ツール：XXX, XXX, XXX<br>
-        <a href="#">READ MORE</a>
+    <div class="works-wrapper">
+        <div class="works1">
+            <div class="works-inner">
+                <p class="text">ひとつめの制作事例が入ります。<br>
+                簡単な説明が入ります。<br>
+                使用ツール：XXX, XXX, XXX<br>
+                <a href="#" class="button read">READ MORE</a></p>
+            </div>
+            <img src="images/tree.jpg" class="works-image">
+        </div>
+        <div class="works2">
+            <div class="works-inner">
+                <p class="text">ふたつめの制作事例が入ります。<br>
+                簡単な説明が入ります。<br>
+                使用ツール：XXX, XXX, XXX<br>
+                <a href="#" class="read button">READ MORE</a></p>
+            </div>
+            <img src="images/building.jpg" class="works-image">
+        </div>
+        <div class="works3">
+            <div class="works-inner">
+                <p class="text">みっつめの制作事例が入ります。<br>
+                簡単な説明が入ります。<br>
+                使用ツール：XXX, XXX, XXX<br>
+                <a href="#" class="button read">READ MORE</a></p>
+            </div>
+            <img src="images/lake.jpg" class="works-image">
+        </div>
+        <div class="works4">
+            <div class="works-inner">
+            <p class="text">よっつめの制作事例が入ります。<br>
+            簡単な説明が入ります。<br>
+            使用ツール：XXX, XXX, XXX<br>
+            <a href="#" class="button read">READ MORE</a></p>
+            </div>
+        <img src="images/sky.jpg" class="works-image">
+        </div>
     </div>
 </section>
 <section class="skills-container">
@@ -88,8 +102,8 @@
         <input type="submit" value="SEND">
     </form>
 </section>
-<footer>
-    <p><small>&copy; sample site</small></p>
+<footer class="footer-container">
+    &copy; sample site
 </footer>
 </body>
 </html>
