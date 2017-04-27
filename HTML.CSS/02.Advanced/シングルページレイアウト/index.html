@@ -10,16 +10,16 @@
 </head>
 <body>
 <header class="header-container">
-    <p class="header-top">Web designer's portfolio</p>
-    <h1>HI, MY NAME IS...</h1>
-    <p class="header-bottom">Check out some of my works.</p>
-    <div class="header-button">
+    <p class="header-subtitle">Web designer's portfolio</p>
+    <h1 class="header-title">HI, MY NAME IS...</h1>
+    <p class="header-description">Check out some of my works.</p>
+    <div class="buttons">
         <a class="button button-about" href="#about-container">LEARN MORE</a>
         <a class="button button-contact" href="#contact-container">SEND MESSAGE</a>
     </div>
 </header>
 <section class="about-container">
-    <h2>ABOUT ME</h2>
+    <h2 class="content-title">ABOUT ME</h2>
     <p>はじめまして。日本でWebデザイナーをしています。<br>
     デザインの専門学校を卒業し、制作会社での業務経験を経て、現在はフリーランスとして働いています。
     </p>
@@ -28,66 +28,74 @@
     </p>
 </section>
 <section class="works-container">
-    <h2>WORKS</h2>
+    <h2 class="content-title">WORKS</h2>
     <div class="works-wrapper">
         <div class="works1">
-            <div class="works-inner">
-                <p class="text">ひとつめの制作事例が入ります。<br>
-                簡単な説明が入ります。<br>
-                使用ツール：XXX, XXX, XXX<br>
-                <a href="#" class="button read">READ MORE</a></p>
-            </div>
             <img src="images/tree.jpg" class="works-image">
+            <div class="work-description">
+                <div class="works-inner">
+                    <p class="text">ひとつめの制作事例が入ります。<br>
+                    簡単な説明が入ります。<br>
+                    使用ツール：XXX, XXX, XXX<br>
+                    <a href="#" class="button button-read">READ MORE</a></p>
+                </div>
+            </div>
         </div>
         <div class="works2">
-            <div class="works-inner">
-                <p class="text">ふたつめの制作事例が入ります。<br>
-                簡単な説明が入ります。<br>
-                使用ツール：XXX, XXX, XXX<br>
-                <a href="#" class="read button">READ MORE</a></p>
-            </div>
             <img src="images/building.jpg" class="works-image">
+            <div class="work-description">
+                <div class="works-inner">
+                    <p class="text">ふたつめの制作事例が入ります。<br>
+                    簡単な説明が入ります。<br>
+                    使用ツール：XXX, XXX, XXX<br>
+                    <a href="#" class="button button-read">READ MORE</a></p>
+                </div>
+            </div>
         </div>
         <div class="works3">
-            <div class="works-inner">
-                <p class="text">みっつめの制作事例が入ります。<br>
-                簡単な説明が入ります。<br>
-                使用ツール：XXX, XXX, XXX<br>
-                <a href="#" class="button read">READ MORE</a></p>
-            </div>
             <img src="images/lake.jpg" class="works-image">
+            <div class="work-description">
+                <div class="works-inner">
+                    <p class="text">みっつめの制作事例が入ります。<br>
+                    簡単な説明が入ります。<br>
+                    使用ツール：XXX, XXX, XXX<br>
+                    <a href="#" class="button button-read">READ MORE</a></p>
+                </div>
+            </div>
         </div>
         <div class="works4">
-            <div class="works-inner">
-            <p class="text">よっつめの制作事例が入ります。<br>
-            簡単な説明が入ります。<br>
-            使用ツール：XXX, XXX, XXX<br>
-            <a href="#" class="button read">READ MORE</a></p>
+            <img src="images/sky.jpg" class="works-image">
+            <div class="work-description">
+                <div class="works-inner">
+                    <p class="text">よっつめの制作事例が入ります。<br>
+                    簡単な説明が入ります。<br>
+                    使用ツール：XXX, XXX, XXX<br>
+                    <a href="#" class="button button-read">READ MORE</a></p>
+                </div>
             </div>
-        <img src="images/sky.jpg" class="works-image">
         </div>
     </div>
 </section>
 <section class="skills-container">
-    <h2>MY SKILLS</h2>
+    <h2 class="content-title">MY SKILLS</h2>
     <div class="skills-wrapper">
         <div class="skill1">
-            <i class="skills-icon fa fa-lightbulb-o"></i>
-            <h3>IDEA</h3>
+            <i class="skill-icon fa fa-lightbulb-o"></i>
+            <h3 class="skill-title">IDEA</h3>
             <p>何かを考えることが好きです。<br>
             新しいことを思いついては試しています。<br>
             ディレクションの経験もあります。</p>
         </div>
         <div class="skill2">
-            <i class="skills-icon fa fa-paint-brush"></i>
-            <h3>DESIGN</h3>
+            <i class="skill-icon fa fa-paint-brush"></i>
+            <h3 class="skill-title">DESIGN</h3>
             <p>見た目の綺麗さだけじゃなくて、<br>
             使いやすさ、情報の伝わりやすさなど、<br>
             その先まで考えることを意識しています。</p>
         </div>
         <div class="skill3">
-            <i class="skills-icon fa fa-code"></i>
-            <h3>CODING</h3>
+            <i class="skill-icon fa fa-code"></i>
+            <h3 class="skill-title">CODING</h3>
             <p>HTML/CSSコーディングも行います。<br>
             正しく美しいマークアップと、<br>
             今後の変更への強さを考慮しています。</p>
@@ -95,15 +103,15 @@
     </div>
 </section>
 <section class="contact-container">
-    <h2>CONTACT</h2>
-    <form>
+    <h2 class="content-title">CONTACT</h2>
+    <form class="contact-form">
         <input type="text" placeholder="NAME">
         <textarea placeholder="MESSAGE"></textarea>
         <input type="submit" value="SEND">
     </form>
 </section>
 <footer class="footer-container">
-    &copy; sample site
+    <small class="copyright">&copy; sample site</small>
 </footer>
 </body>
 </html>
