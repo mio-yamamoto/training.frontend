@@ -314,9 +314,7 @@ body {
     margin: 50px auto 0;
 }
 
-.skills1,
-.skills2,
-.skills3 {
+.skills-description {
     display: table-cell;
 }
 
@@ -348,9 +346,7 @@ body {
         display: block;
     }
     
-    .skills1,
-    .skills2,
-    .skills3 {
+    .skills-description {
         display: block;
         margin: 40px auto;
     }
