@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>スタンダードレイアウト</title>
-<!-- <link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/style.css"> -->
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header-wrapper">
         <div class="header-inner">
-            <a href="#"><img src="images/logo.png" alt=""></a>
+            <a href="#"></a>
         </div>
         <nav class="nav-wrapper">
             <div class="nav-inner">
@@ -24,67 +24,60 @@
             </div>
         </nav>
     </header>
-    <section>
+    <section class="float-clear">
         <main>
-            <div class="main-top">
-                <a href="#">
-                    <img src="images/hot-topic.jpg" alt="">
+            <a href="#" class="main-top float-clear">
+                <img src="images/hot-topic.jpg" alt="" class="main-image">
+                <div class="top-inner">
+                    <div class="top-data">2015.09.01 TUE</div>
                     <h3>実務で使えるHTML/CSS<br>
                     モダンコーディングTIPS</h3>
                     <p>Webフロントエンドの進化の勢いはとどまるところを知りません。新しい要素が増えて大幅に表現力が広がったHTML5/CSS3を活用して...</p>
-                </a>
-            </div>
+                </div>
+            </a>
             <div class="main-news">
                 <h2>NEWS</h2>
                 <ol>
-                    <li><a href="#"><div class="news-date">2015.08.23 SUN</div><div class="news-category">NEWS</div><div class="news-discription">WORKSを更新しました。</div></a></li>
-                    <li><a href="#"><div class="news-date">2015.08.12 WED</div><div class="news-category">TOPIC</div><div class="news-discription">CSSでここまでできる！？ホントに使えるCSSセレクタ10選！</div></a></li>
-                    <li><a href="#"><div class="news-date">2015.08.04 TUE</div><div class="news-category">NEWS</div><div class="news-discription">TOPICSを更新しました。</div></a></li>
-                    <li><a href="#"><div class="news-date">2015.07.25 SAT</div><div class="news-category">TOPIC</div><div class="news-discription">HTML/CSSコーディングと切っても切れないWebブラウザのシェア動向をチェックしよう</div></a></li>
-                    <li><a href="#"><div class="news-date">2015.07.09 THU</div><div class="news-category">TOPIC</div><div class="news-discription">HTML5の新しい属性で手軽にフォームバリデーション</div></a></li>
-                    <li><a href="#"><div class="news-date">2015.06.30 TUE</div><div class="news-category">NEWS</div><div class="news-discription">WORKSを更新しました。</div></a></li>
+                    <li><a href="#"><span class="news-date">2015.08.23 SUN</span><span class="news-category news">NEWS</span><span class="news-description">WORKSを更新しました。</span></a></li>
+                    <li><a href="#"><span class="news-date">2015.08.12 WED</span><span class="news-category topic">TOPIC</span><span class="news-description">CSSでここまでできる！？ホントに使えるCSSセレクタ10選！</span></a></li>
+                    <li><a href="#"><span class="news-date">2015.08.04 TUE</span><span class="news-category news">NEWS</span><span class="news-description">TOPICSを更新しました。</span></a></li>
+                    <li><a href="#"><span class="news-date">2015.07.25 SAT</span><span class="news-category topic" topic>TOPIC</span><span class="news-description">HTML/CSSコーディングと切っても切れないWebブラウザのシェア動向をチェックしよう</span></a></li>
+                    <li><a href="#"><span class="news-date">2015.07.09 THU</span><span class="news-category topic">TOPIC</span><span class="news-description">HTML5の新しい属性で手軽にフォームバリデーション</span></a></li>
+                    <li><a href="#"><span class="news-date">2015.06.30 TUE</span><span class="news-category news">NEWS</span><span class="news-description">WORKSを更新しました。</span></a></li>
                 </ol>
             </div>
-            <div class="main-article-wrapper">
+            <div class="main-article-wrapper float-clear">
                 <div class="article-box">
-                    <div class="article-inner">
-                        <a href="#">
-                            <img src="images/article.jpg" alt="">
-                            <h3>実務で使えるHTML/CSSモダンコーディングTIPS</h3>
-                            <p>新しい要素が増えて大幅に表現力が広がったHTML5/CSS3を活用し、モダンなコーディングにチャレンジしましょう！</p>
-                            <div class="article-date">2015.06.17 WED</div>
-                        </a>
-                    </div>
+                    <a href="#">
+                        <img src="images/article.jpg" alt="">
+                        <h3>実務で使えるHTML/CSSモダンコーディングTIPS</h3>
+                        <p>新しい要素が増えて大幅に表現力が広がったHTML5/CSS3を活用し、モダンなコーディングにチャレンジしましょう！</p>
+                        <div class="article-date">2015.06.17 WED</div>
+                    </a>
                 </div>
                 <div class="article-box">
-                    <div class="article-inner">
-                        <a href="#">
-                            <img src="images/article.jpg" alt="">
-                            <h3>実務で使えるHTML/CSSモダンコーディングTIPS</h3>
-                            <p>新しい要素が増えて大幅に表現力が広がったHTML5/CSS3を活用し、モダンなコーディングにチャレンジしましょう！</p>
-                            <div class="article-date">2015.06.17 WED</div>
-                        </a>
-                    </div>
+                    <a href="#">
+                        <img src="images/article.jpg" alt="">
+                        <h3>実務で使えるHTML/CSSモダンコーディングTIPS</h3>
+                        <p>新しい要素が増えて大幅に表現力が広がったHTML5/CSS3を活用し、モダンなコーディングにチャレンジしましょう！</p>
+                        <div class="article-date">2015.06.17 WED</div>
+                    </a>
                 </div>
                 <div class="article-box">
-                    <div class="article-inner">
-                        <a href="#">
-                            <img src="images/article.jpg" alt="">
-                            <h3>実務で使えるHTML/CSSモダンコーディングTIPS</h3>
-                            <p>新しい要素が増えて大幅に表現力が広がったHTML5/CSS3を活用し、モダンなコーディングにチャレンジしましょう！</p>
-                            <div class="article-date">2015.06.17 WED</div>
-                        </a>
-                    </div>
+                    <a href="#">
+                        <img src="images/article.jpg" alt="">
+                        <h3>実務で使えるHTML/CSSモダンコーディングTIPS</h3>
+                        <p>新しい要素が増えて大幅に表現力が広がったHTML5/CSS3を活用し、モダンなコーディングにチャレンジしましょう！</p>
+                        <div class="article-date">2015.06.17 WED</div>
+                    </a>
                 </div>
                 <div class="article-box">
-                    <div class="article-inner">
-                        <a href="#">
-                            <img src="images/article.jpg" alt="">
-                            <h3>実務で使えるHTML/CSSモダンコーディングTIPS</h3>
-                            <p>新しい要素が増えて大幅に表現力が広がったHTML5/CSS3を活用し、モダンなコーディングにチャレンジしましょう！</p>
-                            <div class="article-date">2015.06.17 WED</div>
-                        </a>
-                    </div>
+                    <a href="#">
+                        <img src="images/article.jpg" alt="">
+                        <h3>実務で使えるHTML/CSSモダンコーディングTIPS</h3>
+                        <p>新しい要素が増えて大幅に表現力が広がったHTML5/CSS3を活用し、モダンなコーディングにチャレンジしましょう！</p>
+                        <div class="article-date">2015.06.17 WED</div>
+                    </a>
                 </div>
             </div>
         </main>
