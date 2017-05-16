@@ -333,6 +333,9 @@ aside {
 .documents-wrapper > .documents-inner ul {
     margin: 15px;
 }
+.documents-wrapper > .documents-inner ul.preparation {
+    margin: 0;
+}
 .documents-wrapper > .documents-inner > dl + dl {
     margin-top: 25px;
 }
