@@ -365,12 +365,12 @@ BODY
 .curriculumdetail-list > li + li {
 	border-top: 1px solid #ECECEC;
 }
-.curriculumdetail-list > li > a {
+.curriculumdetail-list > li {
 	display: block;
 	padding: 15px;
 }
-.curriculumdetail-list > li > .curriculumdetail-link:hover,
-.curriculumdetail-list > li > .curriculumdetail-link:hover .item-post {
+.curriculumdetail-list > li .curriculumdetail-link:hover,
+.curriculumdetail-list > li .curriculumdetail-link:hover .item-post {
 	opacity: 0.6;
 	filter: alpha(opacity=60);
 	-ms-filter: "alpha(opacity=60)";
