@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+    body {
+        margin: 0;
+    }
+    .wrapper {
+        display: inline-block;
+        font-size: 0;
+    }
+    .container {
+        margin: 0;
+        display: inline-block;
+        width: 25%;
+    }
+    .text {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        text-align: center;
+        font-size: 13px;
+        line-height: 24px;
+        height: auto;
+        overflow: scroll;
+
+    }
+    .text::before {
+        content: "";
+        background: url(images/tree.jpg);
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.2;
+        transform: rotateX(180deg);
+        height: 100%;
+        width: 100%;
+    }
+    a {
+        display: inline-block;
+        width: 80%;
+        margin-top: 10px;
+        padding: 5px;
+        border: 1px solid;
+        text-decoration: none;
+    }
+    .tree {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+    }
+    
+    @media only screen and (max-width:768px) {
+        .container {
+            width: 100%;
+        }
+        .tree {
+            display: none;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="wrapper">
+<div class="container">
+
+    <div class="text">ひとつめの制作事例が入ります。<br>
+    簡単な説明が入ります。<br>
+    使用ツール：XXX, XXX, XXX<br>
+    <a href="#">READ MORE</a></div>
+
+    <img src="images/tree.jpg" class="tree">
+
+</div>
+<div class="container">
+
+    <div class="text">ひとつめの制作事例が入ります。<br>
+    簡単な説明が入ります。<br>
+    使用ツール：XXX, XXX, XXX<br>
+    <a href="#">READ MORE</a></div>
+
+    <img src="images/tree.jpg" class="tree">
+
+</div>
+<div class="container">
+
+    <div class="text">ひとつめの制作事例が入ります。<br>
+    簡単な説明が入ります。<br>
+    使用ツール：XXX, XXX, XXX<br>
+    <a href="#">READ MORE</a></div>
+
+    <img src="images/tree.jpg" class="tree">
+
+</div>
+<div class="container">
+
+    <div class="text">ひとつめの制作事例が入ります。<br>
+    簡単な説明が入ります。<br>
+    使用ツール：XXX, XXX, XXX<br>
+    <a href="#">READ MORE</a></div>
+
+    <img src="images/tree.jpg" class="tree">
+
+</div>
+</div>
+</body>
+</html>

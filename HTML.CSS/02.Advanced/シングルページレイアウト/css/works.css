@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+}
+/*---------------------------------------------------------------------
+ COMMON
+ ---------------------------------------------------------------------*/
+.content-title {
+    display: inline-block;
+    position: relative;
+    margin: 30px 0 15px;
+    padding-bottom: 15px;
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+.content-title::before,
+.content-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: #999999;
+}
+.content-title::before {
+    bottom: 5px;
+}
+
+.button {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 200px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+@media only screen and (max-width: 768px){
+    .content-title {
+        margin-top: 20px;
+        font-size: 2.5rem;
+    }
+}
+/*---------------------------------------------------------------------
+ BODY
+ ---------------------------------------------------------------------*/
+body {
+    margin: 0;
+    background:#151515 url(../images/bg.png) no-repeat fixed left bottom;
+    background-size: cover;
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: Raleway, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1024px){
+    body {
+    background-image: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    body {
+        font-size: 1.3rem;
+    } 
+}
+/*---------------------------------------------------------------------
+ SECTION(WORKS)
+ ---------------------------------------------------------------------*/
+.works-container {
+    padding: 80px 0;
+    background-color: #383634;
+}
+
+.works-wrapper {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.works {
+    display: table-cell;
+    position: relative;
+}
+
+.works-image {
+    display: block;
+    width: 100%;
+    margin: 60% 0 0;
+}
+
+.works-description {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    overflow-y: auto;
+    transform: translateZ(0);
+    z-index: 1;
+}
+
+.works-inner {
+    display: table;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.works-text {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.button-read {
+    margin-top: 20px;
+    padding: 3px;
+    border: 1px solid #FFFFFF;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.works::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    opacity: 0.2;
+    transform: rotateX(180deg);
+    height: 50%;
+    width: 100%;
+}
+.works1::after,
+.works3::after {
+    top: 0;
+}
+.works2::after,
+.works4::after {
+    bottom: 0;
+}
+.works1::after {
+    background: url(../images/tree.jpg);
+    background-size: cover;
+}
+.works2::after {
+    background: url(../images/building.jpg);
+    background-size: cover;
+}
+.works3::after {
+    background: url(../images/lake.jpg);
+    background-size: cover;
+}
+.works4::after {
+    background: url(../images/sky.jpg);
+    background-size: cover;
+}
+.works2 .works-image,
+.works4 .works-image {
+    margin: 0 0 60%;
+}
+
+.works1 .works-description,
+.works3 .works-description {
+    top: 0;
+}
+.works2 .works-description,
+.works4 .works-description {
+    bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .works-wrapper {
+        display: block;
+    }
+    .works1,
+    .works2,
+    .works3,
+    .works4 {
+        display: block;
+    }
+    .works-description {
+        position: static;
+    }
+    .works-image {
+        display: none;
+    }
+    .works1::after,
+    .works2::after,
+    .works3::after,
+    .works4::after {
+        height: 100%;
+    }
+}
